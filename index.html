@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="map.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id="container">
+    <h1>RouteGPS</h1>
+    <div class="form-group">
+        <div class="col-xs-2">
+        <input id="terminal" type="text" placeholder="Ruta" class="form-control">
+        </div>
+        <div class="col-xs-2">
+        <input id="date" type="text" placeholder="01/01/2017" class="form-control">
+        </div>
+        <button id="acceptbtn" type="button" class="btn btn-default" onclick="myMap()">Acceptar</button>
+    </div>
+    <div id="googleMap"></div>
+
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=yourgooglemapsapikey&callback=myMap"></script>
+</body>
+</html>
